@@ -1,0 +1,44 @@
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    margin: 20px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .sidebar .icon {
+    font-size: 1.5rem; /* Increase icon size */
+  }
+  
+  .sidebar li:hover {
+    color: #1da1f2; /* Twitter blue on hover */
+    transition: color 0.3s ease;
+  }
+  /* User profile in the sidebar */
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #2f3336;
+  }
+  
+  .user-profile .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-profile h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .user-profile .username {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6e767d;
+  }
+  

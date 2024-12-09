@@ -1,0 +1,79 @@
+/* Main container for the home feed */
+.homefeed-container {
+    display: flex;
+    height: 100vh;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text */
+  }
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .homefeed-container {
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    .sidebar {
+      flex: none; /* Allow sidebar to shrink */
+      width: 100%; /* Full width for smaller screens */
+      border-right: none;
+      border-bottom: 1px solid #2f3336;
+    }
+  
+    .feed {
+      flex: none;
+      width: 100%;
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .rightbar {
+      flex: none;
+      width: 100%;
+      border-left: none;
+      border-top: 1px solid #2f3336;
+    }
+  }
+  .homefeed-container {
+    display: flex;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the whole layout */
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #000;
+    padding: 20px;
+    border-right: 1px solid #2f3336;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Sidebar shadow */
+  }
+  
+  .feed {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .rightbar {
+    flex: 1;
+    background-color: #16181c;
+    padding: 20px;
+    border-left: 1px solid #2f3336;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Rightbar shadow */
+  }
+  /* Logout button */
+.logout-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #0d8cd7;
+    transition: background-color 0.3s ease;
+  }
+  

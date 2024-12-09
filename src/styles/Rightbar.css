@@ -1,0 +1,88 @@
+/* Rightbar styles */
+.rightbar {
+    flex: 1;
+    background-color: #16181c; /* Dark gray background */
+    padding: 20px;
+    border-left: 1px solid #2f3336; /* Light border on the left */
+  }
+  
+  .rightbar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .rightbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rightbar li {
+    margin: 10px 0;
+  }
+  /* Trending topic list */
+.rightbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rightbar li {
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .rightbar li:hover {
+    color: #1da1f2; /* Twitter blue on hover */
+    transition: color 0.3s ease;
+  }
+  /* Trending list */
+.trending-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual trending item */
+  .trending-item {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #1e2126; /* Slightly darker background */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trending-item:hover {
+    background-color: #2f3336; /* Lighter background on hover */
+  }
+  
+  .trending-item h3 {
+    font-size: 1rem;
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  .trending-item .description {
+    font-size: 0.9rem;
+    color: #6e767d;
+  }
+  
+  .trending-item .tweets {
+    font-size: 0.9rem;
+    color: #6e767d;
+  }
+  /* Footer styles */
+.rightbar-footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #6e767d;
+    text-align: center;
+  }
+  
+  .rightbar-footer a {
+    color: #6e767d;
+    text-decoration: none;
+  }
+  
+  .rightbar-footer a:hover {
+    color: #1da1f2; /* Twitter blue on hover */
+  }
+  

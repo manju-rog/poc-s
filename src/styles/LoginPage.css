@@ -1,0 +1,104 @@
+/* Full-screen container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Dark background */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Large X logo */
+  .logo {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #ffd700; /* Gold color */
+    margin-bottom: 20px;
+  }
+  
+  /* Login content section */
+  .login-content {
+    text-align: center;
+  }
+  
+  /* Headings */
+  .login-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .login-btn {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn.google {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .login-btn.apple {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .create-account-btn {
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1rem;
+    background-color: #1da1f2; /* Twitter blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .login-footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .login-footer a {
+    color: #1da1f2;
+    text-decoration: none;
+  }
+  /* Hover effect for Google button */
+.login-btn.google:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for Apple button */
+  .login-btn.apple:hover {
+    background-color: #555555;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for Create Account button */
+  .create-account-btn:hover {
+    background-color: #0d8cd7; /* Darker blue */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change color of Sign-in link on hover */
+  .login-footer a:hover {
+    color: #0d8cd7; /* Darker blue for link hover */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
