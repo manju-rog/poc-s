@@ -1,0 +1,53 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure:
+            entity-id: "https://localhost:8081/saml2/service-provider-metadata/azure"
+            signing:
+              credentials:
+                - private-key-location: "classpath:saml/private-key.pem"
+                  certificate-location: "classpath:saml/certificate.pem"
+            assertingparty:
+              entity-id: "https://sts.windows.net/9ac0ea08-698d-41d8-8c43-2a4b6b26e53a/"
+              singlesignon:
+                sign-request: true
+                url: "https://login.microsoftonline.com/9ac0ea08-698d-41d8-8c43-2a4b6b26e53a/saml2"
+                binding: POST
+              verification:
+                credentials:
+                  - certificate-location: "classpath:saml/azure-certificate.pem"
+
+server:
+  port: 8081
+  ssl:
+    enabled: true
+    key-store: classpath:saml/saml-keystore.p12
+    key-store-password: secret
+    key-store-type: PKCS12
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.saml2: TRACE
+    org.opensaml: DEBUG
+    com.training: DEBUG
+#spring:
+#  security:
+#    saml2:
+#      relyingparty:
+#        registration:
+#          azure-saml:
+#            assertingparty:
+#              metadata-uri: https://login.microsoftonline.com/9ac0ea08-698d-41d8-8c43-2a4b6b26e53a/federationmetadata/2007-06/federationmetadata.xml?appid=38dae2c2-c5f9-4b56-8125-5acd6472bf89
+#                            
+#                            
+#server:
+#  port: 8081
+#  ssl:
+#    enabled: true
+#    key-store: classpath:saml/keystore.p12
+#    key-store-password: secret
+#    key-store-type: PKCS12
+#    key-alias: your_alias
