@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -24,8 +25,10 @@ public class SecurityConfig {
             )
             .saml2Logout(saml2 -> saml2
                 .logoutUrl("/logout/saml2/slo")
-            );
-            
+            )
+        	.addFilterBefore(new SamlLoggingFilter(), AbstractPreAuthenticatedProcessingFilter.class);
+
+        
         return http.build();
     }
 }
