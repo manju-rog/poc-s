@@ -13,7 +13,7 @@ This project implements a **cursor-based pagination system** using **Spring Boot
 ## 🔥 UI Preview
 
 ### **Pagination UI**
-![Pagination UI](https://github.com/manju-rog/paging-jpa/assets/496090df-1ba2-4249-82f1-fce5af87b45d)
+![Pagination UI](https://github.com/manju-rog/paging-jpa/issues/1#issue-2821636029)
 
 
 🔹 Each **Entity card** shows the `name` field.  
