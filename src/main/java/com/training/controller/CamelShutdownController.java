@@ -15,6 +15,6 @@ public class CamelShutdownController implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        controller.blockMainThread(); 
+        controller.run(); 
     }
 }
