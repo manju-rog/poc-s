@@ -1,0 +1,107 @@
+/* Feed styles */
+.feed {
+    flex: 2;
+    padding: 20px;
+  }
+  /* Post box container */
+.post-box {
+    background-color: #16181c; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Textarea for posting */
+  .post-box textarea {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #2f3336;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  
+  /* Post button */
+  .post-box .post-btn {
+    align-self: flex-end;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .post-box .post-btn:hover {
+    background-color: #0d8cd7;
+    transition: background-color 0.3s ease;
+  }
+  /* Post container */
+.post {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #16181c;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Profile picture */
+  .post .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  /* Post content */
+  .post-content h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .post-content .username {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #6e767d;
+  }
+  
+  .post-content p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  /* Add hover effect for posts */
+.post:hover {
+    background-color: #1e2126; /* Slightly lighter background on hover */
+    transition: background-color 0.3s ease;
+  }
+  /* Character counter */
+.char-counter {
+    font-size: 0.9rem;
+    color: #6e767d;
+    margin-bottom: 10px;
+  }
+  /* Like button */
+.post-actions {
+    margin-top: 10px;
+  }
+  
+  .like-btn {
+    background: none;
+    border: none;
+    color: #1da1f2;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-btn:hover {
+    text-decoration: underline;
+  }
+  
