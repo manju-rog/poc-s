@@ -1,0 +1,52 @@
+#spring:
+#  security:
+#    saml2:
+#      relyingparty:
+#        registration:
+#          azure:
+#            entity-id: "your:entity:id"
+#            signing:
+#              credentials:
+#                - private-key-location: "yourpath:private-key.pem"
+#                  certificate-location: "yourpath:certificate.pem"
+#            assertingparty:
+#              entity-id: "your:entity:id"
+#              singlesignon:
+#                sign-request: true
+#                url: "https://login.microsoftonline.com/<your-tenent-id>/saml2"
+#                binding: POST
+#              verification:
+#                credentials:
+#                  - certificate-location: "yourpath:azure-certificate.pem"
+#
+#server:
+#  port: 8081
+#  ssl:
+#    enabled: true
+#    key-store: classpath:saml/saml-keystore.p12
+#    key-store-password: secret
+#    key-store-type: PKCS12
+
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure:
+            assertingparty:
+              metadata-uri: <your-app-metadata-url>
+                                        
+server:
+  port: 8081
+  ssl:
+    enabled: true
+    key-store: yourpath:saml-keystore.p12
+    key-store-password: secret
+    key-store-type: PKCS12
+
+logging:
+  level:
+#    org.springframework.security: DEBUG
+    org.springframework.security.saml2: TRACE
+    org.opensaml: DEBUG
+    com.training: DEBUG
