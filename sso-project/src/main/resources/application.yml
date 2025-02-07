@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure:
+            signing:
+              credentials:
+                - private-key-location: classpath:saml/private.key
+                  certificate-location: classpath:saml/public.cer
+            singlelogout:
+              binding: POST
+              response-url: "{baseUrl}/logout/saml2/slo"
+            assertingparty:
+              entity-id: https://login.microsoftonline.com/{tenant-id}/saml2
+              verification:
+                credentials:
+                  - certificate-location: classpath:saml/azure.cer
+              singlesignon:
+                url: https://login.microsoftonline.com/{tenant-id}/saml2
+#              singlesignout:
+#                url: https://login.microsoftonline.com/{tenant-id}/saml2
+#                response-url: https://login.microsoftonline.com/{tenant-id}/saml2/logout
+
