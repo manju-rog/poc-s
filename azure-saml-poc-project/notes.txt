@@ -1,0 +1,3 @@
+azure saml metadata url : https://login.microsoftonline.com/9ac0ea08-698d-41d8-8c43-2a4b6b26e53a/federationmetadata/2007-06/federationmetadata.xml?appid=38dae2c2-c5f9-4b56-8125-5acd6472bf89
+
+key-store: classpath:saml/saml-keystore.p12
